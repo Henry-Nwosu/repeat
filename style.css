@@ -1,0 +1,182 @@
+
+.main {
+    display: flex;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+    max-width: 100%;
+}
+
+
+.gallery-item{
+    border: 3px solid red;
+}
+
+.cardimage{
+
+    width: 100%;
+    aspect-ratio: 1/1;
+   
+
+}
+
+.mygallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    object-fit: cover;
+    grid-row-gap: 150px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.stacked{
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 1;
+    grid-row: 1 /1 ;
+}
+
+.info {
+    align-self: end;
+    margin: .5rem ;
+}
+
+.card {
+    position: relative; /* Needed for absolute positioning of child divs */
+    width: 300px; 
+    height: 200px; 
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Animation for hover effect */
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* width: 100%;
+    height: 100%; */
+    backface-visibility: hidden; 
+  }
+  
+  /* .card-back {
+    transform: rotateY(180deg); 
+    transition: transform 0.3s ease-in-out; 
+  }
+   */
+  /* .card:hover {
+    transform: scale(1.05);  
+  }
+  
+  .card:hover .card-front {
+    transform: rotateY(180deg); 
+  }
+  
+  .card:hover .card-back {
+    transform: rotateY(0deg); 
+  } */
+
+/*  */
+
+   /* this is the styling for the back of the card */
+  .now {
+    position: relative; /* Needed for absolute positioning of child divs */
+    width: 300px; 
+    height: 400px; 
+   
+    box-shadow: 0 2px 5px rgba(234, 4, 4, 0.1);
+    transition: transform 0.3s ease-in-out; /* Animation for hover effect */
+    
+  }
+  
+
+   /* styling for background image */
+  .now > img {
+    width: 300px; 
+    height: 400px; 
+   
+  }
+  
+  .now > .back-card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional semi-transparent overlay */
+    color: white;
+    
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  /* styling for logo */
+  
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: #9f0f0f;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  /* description text */
+  .description {
+    font-size: 20px;
+    font-family: 'Montserrat';
+   
+  }
+
+  .gotobusinessprofile {
+    width: 150px;
+    height: 50px;
+    left: 25%;
+    bottom: 25%;
+    position: absolute;
+    border-radius: 30px;
+    
+    background-color: goldenrod;
+  }
+  .divforgotobusinessprofile {
+    position: relative;
+    
+  
+  }
+
+  .back-card-text > .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .phonediv {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   /* Adjust as needed: space-around, space-evenly, flex-start, flex-end */
+  }
+
+  .phonediv > p {
+   
+    top: 0px;
+    margin: 0;
+  }
+
+  .icons > img {
+    height: 16px;
+    width: 16px;
+  }
+
+  /* end of styling for back of card */
